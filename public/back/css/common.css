@@ -1,0 +1,12 @@
+body{
+  background-color: #222D32;
+}
+.container .panel-heading{
+  height: 50px;
+  line-height: 50px;
+  padding:0;
+  font-size: 20px;
+}
+.container .mg_150{
+  margin-top: 150px;
+}
