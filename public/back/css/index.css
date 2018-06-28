@@ -1,0 +1,12 @@
+.echars1,
+.echars2 {
+  width: 48%;
+  height: 500px;
+
+}
+.echars1{
+  float: left;
+}
+.echars2{
+  float: right;
+}
