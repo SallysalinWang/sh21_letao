@@ -132,6 +132,30 @@ img{
 .lt_product li .old_price{
   text-decoration: line-through;
 }
-.lt_product li button{
+.lt_product li .mui-ellipsis-2{
+  height: 40px;
+}
+
+
+
+/*公共的搜索框样式*/
+.lt_search{
+  position: relative;
+  padding:10px;
+}
+
+.lt_search .search_input{
+  height: 34px;
+  border-radius: 5px;
+  border:1px solid #007AFF;
+  font-size: 12px;
+  margin: 0;
+
+}
+.lt_search .search_btn{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 0 5px 5px 0;
 
 }
