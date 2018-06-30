@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script >
+  function getSearchUrl(){
+    var search = location.search;
+//  console.log(search);
+    search = decodeURI(search);
+    var str = search.slice(1);
+//  console.log(str);
+    var arr = str.split('&');
+//  console.log(arr);
+    var obj = {};
+    arr.forEach(function(v,i){
+      var key = v.split('=')[0];
+      var value = v.split("=")[1];
+//  console.log(key,value);
+      obj[key] = value;
+    })
+    return obj;
+  }
+ var obj = getSearchUrl();
+  console.log(obj);
+</script>
+</body>
+</html>

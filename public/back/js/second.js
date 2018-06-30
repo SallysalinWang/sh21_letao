@@ -39,7 +39,7 @@ $(function(){
     $('#secondModal').modal('show');
     $.ajax({
       type:'get',
-      url:'/category/querySecondCategoryPaging',
+      url:'/category/queryTopCategoryPaging',
       data:{
         page:1,
         pageSize:100
@@ -62,7 +62,7 @@ $(function(){
     $("#dropText").text(txt);
     //获取id，设置 name = "categoryId" 的input 框
     var id = $(this).data('id');
-    $('[name = "catagoryId"]').val(id);
+    $('[name="categoryId"]').val(id);
 
     $('#form').data('bootstrapValidator').updateStatus("categoryId","VALID");
 
@@ -127,6 +127,7 @@ $(function(){
   });
 
 //  6、注册表单校验成功事件，阻止默认提交，通过ajax提交
+  console.log($('#form').serialize());
   $('#form').on('success.form.bv',function(e){
     e.preventDefault();
     $.ajax({
@@ -139,13 +140,13 @@ $(function(){
         if(info.success){
           $('#secondModal').modal('hide');
           //重置表单
-          $('#form').data('bootstrapValidator').resetForm(true);
-          currentPage =1;
+
+          currentPage = 1;
           render();
 
           $('#dropText').text("请选择一级分类");
           $('#imgBox img').attr('src',"images/none.png");
-
+          $('#form').data('bootstrapValidator').resetForm(true);
         }
       }
     })
