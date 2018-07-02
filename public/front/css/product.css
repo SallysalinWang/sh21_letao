@@ -1,0 +1,40 @@
+/*产品模块公共的上边框样式*/
+.item_box{
+  padding:10px;
+  border-top:1px solid #CCC;
+}
+.lt_pro_price .price{
+  color: red;
+}
+.lt_pro_price .oldPrice{
+  color: #666;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.lt_pro_num span{
+  font-size: 12px;
+  color: #666;
+}
+.lt_pro_detile{
+  font-size: 16px;
+}
+.lt_pro_detile p{
+  font-size: 16px;
+  color: #000;
+  display: inline-block;
+}
+.lt_goCart{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 55px;
+  width: 100%;
+  padding:10px;
+  background-color: #EFEFF4;
+  border-top:1px solid red;
+
+}
+.lt_goCart .mui-pull-left{
+  padding: 5px;
+}

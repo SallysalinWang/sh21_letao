@@ -1,0 +1,54 @@
+.cart_item{
+  height: 110px;
+}
+.mui-table-cell{
+  display: block;
+}
+.cart_img{
+  width: 60px;
+  height: 90px;
+}
+.cart_img img{
+  width: 60px;
+  height: 60px;
+}
+.cart_info{
+  height: 90px;
+  overflow: hidden;
+  padding:0 10px;
+}
+.cart_info .mui-ellipsis-2{
+  color: #000;
+}
+.cart_info .price{
+  color: red;
+}
+.cart_info .oldPrice{
+  text-decoration: line-through;
+  color: #666;
+}
+.lt_total{
+  position: absolute;
+  bottom: 55px;
+  left: 0;
+  height: 30px;
+  line-height:30px;
+  width: 100%;
+  font-size: 12px;
+  background-color: #eee;
+  padding-left: 10px;
+}
+.lt_total .mui-pull-left span{
+  color: red;
+}
+.lt_total a{
+  background-color:red;
+  color: #fff;
+  font-size: 12px;
+  display: block;
+  height: 30px;
+  line-height:30px;
+  text-align: center;
+  padding:0 15px;
+
+}

@@ -23,7 +23,7 @@ img{
   margin: 0 auto;
   position: relative;
   padding-top: 45px;
-  padding-bottom: 55px;
+  padding-bottom: 85px;
 }
 .lt_header{
   width: 100%;
@@ -159,3 +159,20 @@ img{
   border-radius: 0 5px 5px 0;
 
 }
+
+/*公共的尺码样式*/
+.lt_pro_size span{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #CCC;
+  font-size: 12px;
+  text-align: center;
+  line-height:25px;
+  margin: 3px 0;
+}
+.lt_pro_size span.current{
+  background-color: orange;
+  color: #fff;
+}
+
